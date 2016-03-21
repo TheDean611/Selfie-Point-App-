@@ -1,0 +1,23 @@
+<ons-page class="transparent">
+  <ons-toolbar modifier="transparent">
+    <div class="left">
+      <ons-toolbar-button ng-click="menu.toggle()"><ons-icon icon="ion-navicon-round" style="color: white; font-size: 28px;" fixed-width="false"></ons-icon></ons-toolbar-button>
+    </div>
+  </ons-toolbar>
+
+  <div class="details-content glass">
+    <div class="welcome">
+      
+      <img src="images/logo.png" class="selfie-logo">
+
+      <ons-button modifier="ghost large" ng-click="menu.setMainPage('selfie.html', {closeMenu: true});">{{ 'TAKE_SELFIE' | translate }}</ons-button>
+
+      <ons-button modifier="ghost large" ng-click="menu.setMainPage('map.html', {closeMenu: true});">{{ 'SELFIE_POINTS' | translate }}</ons-button>
+      
+    </div>
+    <div class="blur">
+      <img src="images/bg.jpg" class="bg">
+    </div>
+  </div>
+
+</ons-page>

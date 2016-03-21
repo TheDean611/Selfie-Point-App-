@@ -1,0 +1,32 @@
+<div  ng-controller="menuController" >
+  <ons-list class="menu-list black-bg">
+    <ons-list-item modifier="chevron"  class="menu-item" ng-click="menu.setMainPage('welcome.html', {closeMenu: true});">
+      <ons-icon icon="fa-home" fixed-width="true"></ons-icon>
+      {{ 'HOME' | translate }}
+    </ons-list-item>
+    <ons-list-item modifier="chevron"  class="menu-item" ng-click="menu.setMainPage('map.html', {closeMenu: true});">
+      <ons-icon icon="ion-map" fixed-width="true"></ons-icon>
+      {{ 'SELFIE_POINTS' | translate }}
+    </ons-list-item>
+    <ons-list-item modifier="chevron"  class="menu-item" ng-click="menu.setMainPage('selfie.html', {closeMenu: true});">
+      <ons-icon icon="ion-android-camera" fixed-width="true"></ons-icon>
+      {{ 'TAKE_SELFIE' | translate }}
+    </ons-list-item>
+    <ons-list-item modifier="chevron"  class="menu-item" ng-click="menu.setMainPage('news.html', {closeMenu: true});">
+      <ons-icon icon="ion-ios-paper" fixed-width="true"></ons-icon>
+      {{ 'NEWS' | translate }}
+    </ons-list-item>
+    <ons-list-item modifier="chevron"  class="menu-item" ng-click="menu.setMainPage('cities.html', {closeMenu: true});">
+      <ons-icon icon="ion-location" fixed-width="true"></ons-icon>
+      {{ 'CITIES' | translate }}
+    </ons-list-item>
+    <ons-list-item modifier="chevron"  class="menu-item" ng-click="menu.setMainPage('corporations.html', {closeMenu: true});">
+      <ons-icon icon="ion-briefcase" fixed-width="true"></ons-icon>
+      {{ 'CORPORATIONS' | translate }}
+    </ons-list-item>
+    <ons-list-item class="menu-item" ng-click="logOut()">
+      <ons-icon icon="ion-power" fixed-width="true"></ons-icon>
+      {{ 'LOGOUT' | translate }}
+    </ons-list-item>
+  </ons-list>
+</div>

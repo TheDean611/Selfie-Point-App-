@@ -1,0 +1,66 @@
+<ons-page  ng-controller="signupController" modifier="nopaddingtop">
+  <ons-toolbar modifier="transparent">    
+    <div class="left">
+      
+    </div>
+    <div class="right">
+
+    </div>
+  </ons-toolbar>
+
+  <div class="signup-page">
+    <div class="signup-logo">
+      <img src="images/logo.png" class="selfie-logo" width="150">
+    </div>
+
+    <div class="signup-form">
+      <div class="signup-wrapper">
+
+        <ons-row>
+          <ons-col>
+            <input type="email" class="text-input--underbar width-full" ng-model="email" placeholder="{{ 'EMAIL' | translate }}" value="" >
+          </ons-col>
+        </ons-row>
+
+        <ons-row>
+          <ons-col>
+            <input type="text" class="text-input--underbar width-full" ng-model="username" placeholder="{{ 'USERNAME' | translate }}" value="" >
+          </ons-col>
+        </ons-row>
+
+        <ons-row>
+          <ons-col>
+            <input type="password" class="text-input--underbar width-full" ng-model="password" placeholder="{{ 'PASSWORD' | translate }}" value="" >
+          </ons-col>
+        </ons-row>
+
+        <div class="lucent">
+          <p class="note">{{ 'PASSWORD_INSTRUCTIONS' | translate }}</p>
+        </div>
+
+        <ons-row>
+          <ons-col>
+            <ons-button modifier="large" ng-click="register()">{{ 'SIGNUP' | translate }}</ons-button>
+          </ons-col>
+        </ons-row>
+        <br>
+        <ons-row>
+          <ons-col>
+            <ons-button modifier="large cta" ng-click="menu.setMainPage('login.html', {closeMenu: true})" >{{ 'LOGIN' | translate }}</ons-button>
+          </ons-col>
+        </ons-row>
+      </div>
+    </div>
+
+    <div class="blur">
+      <img src="images/bg.jpg" class="bg">
+    </div>
+  </div>
+
+  <ons-modal var="modal">
+    <ons-icon icon="ion-loading-c" spin="true"></ons-icon>
+    <br><br>
+    {{ 'CONNECTING' | translate }}
+  </ons-modal>  
+
+</ons-page>
